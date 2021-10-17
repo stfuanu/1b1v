@@ -15,10 +15,10 @@ import (
 
 // w.Write([]byte("Gorilla!\n"))
 
-// type Jsondata struct {
-// 	Voter     string `json:"voter"`
-// 	Candidate string `json:"candidate"`
-// }
+type Jsondata struct {
+	Voter     string `json:"voter"`
+	Candidate string `json:"candidate"`
+}
 
 type ResponseToVoter struct {
 	Status     	int 		`json:"status"`
@@ -72,7 +72,7 @@ func AppendNewBlock(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Method not allowed."))
 	} else {
 
-		var newvote core.VoteStat
+		var newvote Jsondata
 
 		// error :- web\api.go:75:24: cannot convert r.Body (type io.ReadCloser) to type []byte
 		// note :- ye wala (io.reader) https://pkg.go.dev/encoding/json#NewDecoder
@@ -95,15 +95,17 @@ func AppendNewBlock(w http.ResponseWriter, r *http.Request) {
 
 
         // New Block --->
-        addedORnot, hashifany := core.Addnewblock(newvote.Voter, newvote.Candidate)
+        addedORnot, err , hashifany := core.Addnewblock(newvote.Voter, newvote.Candidate)
 
-        if addedORnot {
+        if addedORnot && err == nil {
         	// fmt.Println("sukcess" , hashifany)
         	io.WriteString(w,WhatHappened(http.StatusOK, "Success" , hashifany) )
+        	// w.Write([]byte("Method not allowed."))
         	
         } else {
         	// fmt.Println("NoHash" , hashifany)
-        	io.WriteString(w, WhatHappened(http.StatusOK, "Failed" , hashifany) )
+        	fullMessage := fmt.Sprintf("Failed : %v" , err)
+        	io.WriteString(w, WhatHappened(http.StatusOK, fullMessage , hashifany) )
         	
         }
 
@@ -140,12 +142,12 @@ func WhatHappened(statuscode int , mess string , hashh string) string {
 	// }
 	// return *data
 	bb, err := json.MarshalIndent(*data, "", "  ")
-    if err != nil {
-        fmt.Println(err)
-    }
+    // if err != nil {
+    //     fmt.Println(err)
+    // }
+    core.Handle(err)
     // io.WriteString(w, string(bb))
     return string(bb)
-
 }
 
 
