@@ -1,46 +1,102 @@
 [
-  {
-    "index": 0,
-    "timestamp": "2021-09-24 19:07:41.659005",
-    "vote": {
-      "voterAddr": "anurag",
-      "candidateAddr": "candidateAddr"
+ {
+  "index": 0,
+  "timestamp": "2021-10-22 03:43:11.326633687 +0530 IST",
+  "votes": [
+   {
+    "txhash": "e741ebdbec0f0d9bc6ebd790565838dbb917479db794020cf78bd70ca53d3cbd",
+    "voter": {
+     "address": "VOTER_ADDRESS",
+     "pubkey": "VOTER_PUBLIC_KEY",
+     "signature": "SIGNATURE_PLUS_R"
     },
-    "nonce": 872831,
-    "prevhash": "0",
-    "hash": "00000f141eb946abc359e4d24784f200afaed6e47e74ef04fedfc62e6cfcdd00"
-  },
-  {
-    "index": 1,
-    "timestamp": "2021-09-24 19:07:42.181197",
-    "vote": {
-      "voterAddr": "anu",
-      "candidateAddr": "cand1"
+    "candidate": "CANDIDATE_ADDRESS",
+    "status": true,
+    "contract": "CONTRACT_HASH"
+   }
+  ],
+  "nonce": 709248,
+  "prevhash": "0",
+  "hash": "00000797c18eb8960f8b9e9bbb3997dca7c830a22cb5497c68766d97937c21d6"
+ },
+ {
+  "index": 1,
+  "timestamp": "2021-10-22 03:43:14.629012283 +0530 IST",
+  "votes": [
+   {
+    "txhash": "7554f42ba7dd6d5c17ccca8870f664935c5cc31f3f86fe1ed551694e4f1ad471",
+    "voter": {
+     "address": "1KofW7wPdXUo7PKVEdbSSJsduehT2uyvFK",
+     "pubkey": "57cb07fb2d875f6c2be320d7e7c379f9023ac37394183dd1e085fde74e8b07a9f13cc97dbab1787aa3ed172e9dcfac9f808d551348b57e66c068e879d2f9cd4d",
+     "signature": "c8f572d1091645e5b2344ce61394c69ecacc62769f499bef2f13690ddea891cd17ff7f100d262b24b924d4631c75f39e27f53d210a74eb854417c11eb32014df"
     },
-    "nonce": 432960,
-    "prevhash": "00000f141eb946abc359e4d24784f200afaed6e47e74ef04fedfc62e6cfcdd00",
-    "hash": "0000036654f4b0b063477f9477ea320fe8d1caf454fd88bcf6f253f4f6084e40"
-  },
-  {
-    "index": 2,
-    "timestamp": "2021-09-24 19:07:42.520066",
-    "vote": {
-      "voterAddr": "ayu",
-      "candidateAddr": "cand2"
+    "candidate": "19yaXUBokMBzdqFex5qpZPwvV3CStnRVff",
+    "status": true,
+    "contract": "uewdnedjwnajdnwejjd"
+   }
+  ],
+  "nonce": 37401,
+  "prevhash": "00000797c18eb8960f8b9e9bbb3997dca7c830a22cb5497c68766d97937c21d6",
+  "hash": "000001d04d7ebef6f6f7debcbb68496052febe3ae7eeff37ef17143e0e0e2e34"
+ },
+ {
+  "index": 2,
+  "timestamp": "2021-10-22 03:43:16.708527 +0530 IST",
+  "votes": [
+   {
+    "txhash": "206e291ef53898b2b2c7e76082348d9b3b1f27c893a669da104a228415f83375",
+    "voter": {
+     "address": "1BTmKbAFZFBM3RWs9ypy2xB2JgzCrVaTAG",
+     "pubkey": "1d432bab2da9fbb014185c664a738c962da4f3790b1386f45cd41ef8d45ef50a2bfb91ceb868fe5187462baa49fa7454261a8d580982b8dbe9dc80f18f06bae5",
+     "signature": "219e480c6a2c929508382c97add10037e2d28c11b811fa8af422c9ad8906d4910c5d60e19a9660015b8897c0a6c421be6eb098da6ad6dcedfe66e384b7140705"
     },
-    "nonce": 5939492,
-    "prevhash": "0000036654f4b0b063477f9477ea320fe8d1caf454fd88bcf6f253f4f6084e40",
-    "hash": "00000647f56373d09fd2a7cb44f458ba0f66ffaadd673dda106c22880a559c68"
-  },
-  {
-    "index": 3,
-    "timestamp": "2021-09-24 19:09:48.143604",
-    "vote": {
-      "voterAddr": "sirr",
-      "candidateAddr": "cand33773"
+    "candidate": "19yaXUBokMBzdqFex5qpZPwvV3CStnRVff",
+    "status": true,
+    "contract": "jwj238ej283"
+   }
+  ],
+  "nonce": 500460,
+  "prevhash": "000001d04d7ebef6f6f7debcbb68496052febe3ae7eeff37ef17143e0e0e2e34",
+  "hash": "000001bba6ed09eade13f674e3020613ba6d497bca96fa7c15022148fd5fdb75"
+ },
+ {
+  "index": 3,
+  "timestamp": "2021-10-22 03:46:38.763488607 +0530 IST",
+  "votes": [
+   {
+    "txhash": "0a7a8a7f32efcc3567ab8a2e87761bfdc46c8f3332b611667cb980a497e37729",
+    "voter": {
+     "address": "1Gjw6i9GUNSkqWXrRT4dSLnvTmaiazLJ1n",
+     "pubkey": "2fd53117cf73a4eb051b44d3b4af2d7a09b53c253f2f2880f4a89bc71ccc2d7886dae4f7927f056e985450d31f7a85db5fd50c2244b19d090b83b4cfcfec6fbc",
+     "signature": "56857d1107a7cd72190ca019ab3bda037216b721b07db5a03e3a61c0540f613c7d5c7fd45b4b3f6030a4dfa39ec5c9e5b4c8fbfcc18753fd721c4d68936f5c70"
     },
-    "nonce": 528713,
-    "prevhash": "00000647f56373d09fd2a7cb44f458ba0f66ffaadd673dda106c22880a559c68",
-    "hash": "00000f7294e03c3dcce4367be9c1216721ccc47ec0af245415f7e5e2cfcccf8f"
-  }
+    "candidate": "19yaXUBokMBzdqFex5qpZPwvV3CStnRVff",
+    "status": true,
+    "contract": "uewdnedjwnajdnwejjd"
+   }
+  ],
+  "nonce": 669612,
+  "prevhash": "000001bba6ed09eade13f674e3020613ba6d497bca96fa7c15022148fd5fdb75",
+  "hash": "00000ae88b07019ff6286d635a94fbc08c4bd244ffb44bdbc27fd507ccdfde8f"
+ },
+ {
+  "index": 4,
+  "timestamp": "2021-10-22 03:46:41.619261448 +0530 IST",
+  "votes": [
+   {
+    "txhash": "f74a08dab8e9de9abd16c492eda541176264c618be9bffd8f7b32618ec8197f7",
+    "voter": {
+     "address": "14VV93nZnUzNDYRL8t58iunuTSCtrqkpXQ",
+     "pubkey": "21ca3720d0ce7803219358c936f332a1accc1715258234cd74a88da4ab5f7e29ee273448cfd2df31b06b6476fa4def17da506bb06aef01a6c8e04705ac0b99a1",
+     "signature": "ca9f46c2245b044c3afe4f334f8756352c28e266b6a16928273f7a231a4b10727f913d0c1aabff4f76f1d91c7a15f2282618ce98772e9069ccab55ed4d3885ef"
+    },
+    "candidate": "19yaXUBokMBzdqFex5qpZPwvV3CStnRVff",
+    "status": true,
+    "contract": "jwj238ej283"
+   }
+  ],
+  "nonce": 458195,
+  "prevhash": "00000ae88b07019ff6286d635a94fbc08c4bd244ffb44bdbc27fd507ccdfde8f",
+  "hash": "0000005931826d2d6ab616bb2010dac90755eac668d4ac27a0fe2b885a19ae75"
+ }
 ]

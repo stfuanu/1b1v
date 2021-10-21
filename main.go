@@ -6,14 +6,14 @@ import (
 )
 
 func main() {
-	// core.New()
-	
+	core.Init()
+
 	core.Genesisblock()
 	// core.Printblockchain()
 	// core.Newb()
-	_ , _ , _ = core.Addnewblock("19yaXUBokMBzdqFex5qpZPwvV3CStnRVff", "19yaXUBokMBzdqFex5qpZPwvV3CStnRVff")
-	_, _ , _ = core.Addnewblock("aty", "cand22")
-	
+	_, _, _ = core.Addnewblock("19yaXUBokMBzdqFex5qpZPwvV3CStnRVff", "19yaXUBokMBzdqFex5qpZPwvV3CStnRVff", "uewdnedjwnajdnwejjd")
+	_, _, _ = core.Addnewblock("19yaXUBokMBzdqFex5qpZPwvV3CStnRVff", "19yaXUBokMBzdqFex5qpZPwvV3CStnRVff", "jwj238ej283")
+
 	// _, _ = core.Addnewblock("a4u", "cand82")
 	// _, _ = core.Addnewblock("ayeru", "cand72")
 	// _, _ = core.Addnewblock("ayru", "cand42")
@@ -22,7 +22,7 @@ func main() {
 	// core.Addnewblock("new", "klsklaskl")
 	core.PrintblockchainStdout()
 	api.StartServer()
-	
+
 }
 
 // curl -X POST -H "content-type: application/json"  http://localhost/vote/new -d "{\"address\": \"anu\",\"candidate\": \"Z\"}"

@@ -165,7 +165,7 @@ func ValidateAddress(address string) bool {
     matched, _ := regexp.MatchString(`^1[a-zA-Z0-9.]{30,40}`, address)
 
     if !matched {
-        fmt.Println("not regex match",address)
+        // fmt.Println("not regex match",address)
         return false
     }
 
