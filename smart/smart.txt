@@ -1,0 +1,53 @@
+
+
+# A "smart contract" is simply a program that runs on the Ethereum blockchain. It's a collection of code (its functions) and data (its state) that resides at a specific address on the Ethereum blockchain. -->
+
+Smart contracts are a type of Ethereum account. This means they have a balance and they can send transactions over the network. However they're not controlled by a user, instead they are deployed to the network and run as programmed. User accounts can then interact with a smart contract by submitting transactions that execute a function defined on the smart contract. Smart contracts can define rules, like a regular contract, and automatically enforce them via the code. Smart contracts can not be deleted by default, and interactions with them are irreversible. -->
+
+
+ideas:
+self destructing smart contracts .
+maybe a btc like network where it's voting based , people can upload their Ballot/candidates/duration & it will generate a url to vote . -->
+
+
+
+
+links :
+https://ethereum.org/en/developers/docs/smart-contracts/deploying/
+https://github.com/smartcontractkit/full-blockchain-solidity-course-py
+https://www.youtube.com/watch?v=M576WGiDBdQ (16 hr)
+resume : https://youtu.be/M576WGiDBdQ?t=15243
+
+
+TO-FIG-OUT :
+
+how do i do , rpc node server , instead of an html post message , txn mere paas aayega kaise bhai ??
+smart contract ka ABI aur bytecode ka txn kaise karu apne blockchain mai ?? uske andar ABI ka data bhi hai , jisse func call() aur state pta chalega
+Jo later baaki log jo users use karenge usko toh , call karenge . 
+
+
+Running & Generating , bytecode & abi LOCALLY ,  & Testing them ,  without any fancy remix IDE's , Ganache & stuff
+1). https://www.metachris.com/2021/05/creating-go-bindings-for-ethereum-smart-contracts/
+2). https://medium.com/coinmonks/unit-testing-solidity-contracts-on-ethereum-with-go-3cc924091281
+
+Example : All three 
+https://gist.github.com/metachris/ebff1e3d04c6874c5631c14badcb6ded
+
+https://www.quicknode.com/guides/solidity/what-is-an-abi
+
+after generating , Native Go bindings from combinations of .sol/bytecode/abi :-
+https://geth.ethereum.org/docs/dapp/native-bindings
+
+
+The original roadmap and/or dream of the Ethereum platform was to provide a solid, high performing client implementation of the consensus protocol in various languages, which would provide an RPC interface for JavaScript DApps to communicate with, pushing towards the direction of the Mist browser, through which users can interact with the blockchain.
+
+Although this was a solid plan for mainstream adoption and does cover quite a lot of use cases that people come up with (mostly where people manually interact with the blockchain), it eludes the server side (backend, fully automated, devops) use cases where JavaScript is usually not the language of choice given its dynamic nature.
+
+This page introduces the concept of server side native Dapps: Go language bindings to any Ethereum contract that is compile time type safe, highly performant and best of all, can be generated fully automatically from a contract ABI and optionally the EVM bytecode.
+
+
+
+-------------------------------------
+rpc & stuff
+
+https://moralis.io/ethereum-rpc-nodes-what-they-are-and-why-you-shouldnt-use-them/

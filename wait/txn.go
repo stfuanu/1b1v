@@ -15,7 +15,6 @@
 
 // )
 
-
 // // can later add multiple []input/output (not needed in case of votes ig)
 // type Vote struct {
 // 	ID	[]byte 		`json:"ID"`
@@ -23,8 +22,8 @@
 // 	Vout	[]TXOutput 	`json:"voter"`
 // }
 
-// // Considering that transactions unlock previous outputs, 
-// // redistribute their values, and lock new outputs, 
+// // Considering that transactions unlock previous outputs,
+// // redistribute their values, and lock new outputs,
 
 // type TXInput struct {
 // 	Txid      []byte
@@ -37,8 +36,6 @@
 // 	Value      int
 // 	PubKeyHash []byte
 // }
-
-
 
 // func (tx *Transaction) TrimmedCopy() Transaction {
 // 	var inputs []TXInput
@@ -57,10 +54,8 @@
 // 	return txCopy
 // }
 
-
 // // We need to find all unspent transaction outputs (UTXO).
 // // Unspent means that these outputs weren’t referenced in any inputs.
-
 
 // func (bc *Blockchain) FindUTXO(address string) []TXOutput {
 //        var UTXOs []TXOutput
@@ -100,8 +95,6 @@
 
 // 	return accumulated, unspentOutputs
 // }
-
-
 
 // // func (bc *Blockchain) FindUnspentTransactions(address string) []Transaction {
 // //   var unspentTXs []Transaction
@@ -167,4 +160,3 @@
 
 // 	return Transaction{}, errors.New("Transaction is not found")
 // }
-

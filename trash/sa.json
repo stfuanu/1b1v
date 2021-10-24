@@ -1,0 +1,34 @@
+[
+ {
+  "name": "name",
+  "candidates": [
+   "g",
+   "h",
+   "i"
+  ],
+  "start": "344343",
+  "end": "4343434",
+  "Owner": {
+   "address": "sjja",
+   "pubkey": "saa",
+   "signature": "ajsajjas"
+  },
+  "contract": "jjjjqq"
+ },
+ {
+  "name": "name2",
+  "candidates": [
+   "g",
+   "h",
+   "i"
+  ],
+  "start": "344343",
+  "end": "4343434",
+  "Owner": {
+   "address": "sjja",
+   "pubkey": "saa",
+   "signature": "ajsajjas"
+  },
+  "contract": "jjjjqq"
+ }
+]
